@@ -14,7 +14,7 @@ const User = function(user){
 }
 User.checkUsername = (username, result)=>{
     sql.query("SELECT * FROM users WHERE username='"+username+"'",(err,res)=>{
-        if(err){
+        if(err){    
             console.log("Error: " + err);
             result(err, null);
             return;
