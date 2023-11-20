@@ -67,7 +67,7 @@ User.loginModel = (account, result)=>{
 };
 
 User.getAllRecords = (result)=>{
-    sql.query("SELECT * FROM users", (err, res)=>{
+    sql.query("SELECT * FROM player", (err, res)=>{
         if(err){
             console.log("Query err: " + err);
             result(err,null);
